@@ -86,6 +86,7 @@ for (let i = 0; i < secItems.length; i++) {
         if (seconds === 59) {
             secItems[i].style.transition = 'none';
             secItems[i].style.transform = `rotate(${-i * 6 - 6}deg)`;
+
         }
     })
 }
