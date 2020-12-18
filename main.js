@@ -108,7 +108,7 @@ function getTime() {
     digitalClock.textContent = `${hours}:${minutes}:${seconds}`;
 
     for (let i = 0; i < secItems.length; i++) {
-        // secItems[i].style.transition = 'transform .6s';
+        secItems[i].style.transition = 'transform .6s';
         secItems[i].style.transform = `rotate(${-i * 6 + seconds * 6}deg)`;
         secItems[i].classList.remove('active');
     }
